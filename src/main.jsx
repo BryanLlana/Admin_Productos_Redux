@@ -6,6 +6,7 @@ import './index.css'
 import Home from './pages/Home.jsx';
 import RegisterProduct from './pages/RegisterProduct.jsx';
 import LayoutProduct from './layout/LayoutProduct.jsx';
+import EditProduct from './pages/EditProduct.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/nuevo-producto',
         element: <RegisterProduct />
+      },
+      {
+        path: '/editar-producto/:id',
+        element: <EditProduct />
       }
     ]
   }
